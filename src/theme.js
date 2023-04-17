@@ -120,7 +120,7 @@ export const tokens = (mode) => ({
                 900: "#e0ecee",
             
             
-        }
+        },
     }), 
 });
 
@@ -225,4 +225,4 @@ export const ColorModeContext = createContext({
   
     const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
     return [theme, colorMode];
-    };
+    }
