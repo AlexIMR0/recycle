@@ -1,3 +1,5 @@
+// Mock data in the form of a JS object that defines a GeoJSON feature collection. It
+// is encoding for geographic data structures. Each area is defined by a name, and a shape defined by coordinate pairs.
 export const geoFeatures = {
     type: "FeatureCollection",
     features: [
