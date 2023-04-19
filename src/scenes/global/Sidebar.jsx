@@ -17,7 +17,9 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
+// Renders a menu item, takes in several props
 const Item = ({title, to , icon ,  selected, setSelected})=>{
+    // Use hook to get current theme
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     return (
@@ -32,13 +34,17 @@ const Item = ({title, to , icon ,  selected, setSelected})=>{
     )
 }
 
+// Renders sidebar menu
 const Sidebar = () => {
+    // Use the useTheme() hook to get current theme object, to set theme
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
+    // Initially the sidebar will not be collapsed
     const [isCollapsed, setIsCollapsed] = useState(false);
     const [selected, setSelected] = useState("Dashboard");
 
     return (
+        // Layout stylings
         <Box
         sx={{
             "& .pro-sidebar-inner":{
@@ -104,6 +110,7 @@ const Sidebar = () => {
                 </Box>
             </Box>
            )}
+           // Contains routes to different parts of the web application, includes styling
            {/* Menu items */}
            <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
