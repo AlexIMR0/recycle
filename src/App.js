@@ -18,12 +18,17 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   const [theme, colorMode] = useMode();
    
+   // Returns code 
   return (
+  // Component with value of colorMode, changes current color of display using Context API
   <ColorModeContext.Provider value={colorMode}>
+  // Application styling
     <ThemeProvider theme={theme}>
+    // Normalizes browser styling
       <CssBaseline/>
 
     <div className="app">
+    // Creates the side bar, top bar. Routes to components for app to render. 
       <Sidebar/>
       <main className="content">
         <Topbar/> 
