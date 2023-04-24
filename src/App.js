@@ -3,8 +3,8 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
-// import Team from "./scenes/team";
-// import Contacts from "./scenes/contacts";
+import Team from "./scenes/team";
+import Contacts from "./scenes/contacts";
 // import Requests from "./scenes/requests";
 // import Bar from "./scenes/bar";
 // import Form from "./scenes/form";
@@ -29,8 +29,8 @@ function App() {
         <Topbar/> 
         <Routes>
           <Route path="/" element = {<Dashboard/>} />
-          {/* <Route path="/team" element = {<Team/>} /> */}
-          {/* <Route path="/contacts" element = {<Contacts/>} /> */}
+          <Route path="/team" element = {<Team/>} /> 
+          <Route path="/contacts" element = {<Contacts/>} />
           {/* <Route path="/requests" element = {<Requests/>} /> */}
           {/* <Route path="/form" element = {<Form/>} /> */}
           {/* <Route path="/bar" element = {<Bar/>} /> */}
@@ -47,7 +47,7 @@ function App() {
 
     </ThemeProvider>
 
-    
+  
 
   </ColorModeContext.Provider>
     
@@ -57,3 +57,7 @@ function App() {
 }
 
 export default App;
+
+
+
+

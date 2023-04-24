@@ -7,7 +7,8 @@ const Dashboard = () => {
         <Header title="DASHBOARD" subtitle="Welcome to the dashboard"/>
 
         </Box>
-        
+ 
     </Box>
 }
 export default Dashboard;
+
