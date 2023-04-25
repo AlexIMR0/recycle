@@ -22,13 +22,13 @@ function App() {
   return (
   // Component with value of colorMode, changes current color of display using Context API
   <ColorModeContext.Provider value={colorMode}>
-  // Application styling
+  {/* // Application styling */}
     <ThemeProvider theme={theme}>
-    // Normalizes browser styling
+    {/* // Normalizes browser styling */}
       <CssBaseline/>
 
     <div className="app">
-    // Creates the side bar, top bar. Routes to components for app to render. 
+    {/* // Creates the side bar, top bar. Routes to components for app to render.  */}
       <Sidebar/>
       <main className="content">
         <Topbar/> 

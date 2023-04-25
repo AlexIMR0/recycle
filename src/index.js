@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // Render the components on the screen
 root.render(
   <React.StrictMode>
-  // Enables client-side routing in application/lets user navigate page without reloading page
+  {/* Enables client-side routing in application/lets user navigate page without reloading page */}
     <BrowserRouter>
     <App />
     </BrowserRouter>

@@ -110,7 +110,7 @@ const Sidebar = () => {
                 </Box>
             </Box>
            )}
-           // Contains routes to different parts of the web application, includes styling
+           {/* // Contains routes to different parts of the web application, includes styling */}
            {/* Menu items */}
            <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
