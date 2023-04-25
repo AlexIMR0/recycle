@@ -1,3 +1,5 @@
+// Mock data for: team members, contacts, invoice, transaction, charts, geography data.
+
 import { tokens } from "../theme";
 
 export const mockDataTeam = [

@@ -1,7 +1,9 @@
 import { Typography,Box,useTheme } from "@mui/material";
 import { tokens } from "../theme";
 
+// Renders the title and subtitle of the header component, styling included
 const Header = ({title, subtitle})=> {
+    // Hook to get the curren theme for the header
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     return <Box mb={"30px"}>
@@ -13,4 +15,5 @@ const Header = ({title, subtitle})=> {
     </Box>
 }
 
+// Exported for use in other parts of application
 export default Header;
